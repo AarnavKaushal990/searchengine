@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://www.hdcarwallpapers.com/walls/lamborghini_sian_4k-HD.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    padding: 30px;
+    background-color: rgba(93, 41, 33, 0.9); /* Transparent background */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+h1 {
+    color: #be6c31;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #2e09d4;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    color: #000000;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #7866ff;
+    box-shadow: 0 0 10px #000000;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4d636b;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #011508;
+    transform: scale(1.05);
+}
+
+#clear-history-button {
+    background-color: #011d82;
+}
+
+#clear-history-button:hover {
+    background-color: #ff4d4d;
+}
+
+/* Search History Styles */
+.search-history {
+    text-align: left;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #e0ab0d;
+    font-size: 1.8rem;
+}
+
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#history-list li {
+    background-color: #099ee900;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+#history-list li:hover {
+    background-color: #d14e16;
+    transform: translateY(-3px);
+}
+
+.search-time {
+    font-size: 0.9rem;
+    color: #666666;
+}
